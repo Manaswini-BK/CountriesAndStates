@@ -1,0 +1,6 @@
+<div>
+  <app-input-country (inputSelected)="getStates($event)"></app-input-country>
+  <app-show-states [listOfStates]="listOfStates"></app-show-states>
+  <div class="noInfo" [hidden]="!showNoInfoAvailable">No information available about {{ country }}</div>
+</div>
+<ng-http-loader></ng-http-loader>

@@ -1,0 +1,8 @@
+<div style="text-align: center">
+    <form>
+        <select (change)="selectCountry($event)">
+            <option>Select a country...</option>
+            <option *ngFor="let c of countryList">{{ c['name'] }}</option>
+        </select>
+    </form>
+</div>

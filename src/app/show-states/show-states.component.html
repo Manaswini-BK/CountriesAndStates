@@ -1,0 +1,14 @@
+<div>
+    <table>
+        <thead>
+            <th>State</th>
+            <th>State Code</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let state of listOfStates">
+                <td>{{ state['name']}}</td>
+                <td>{{ state['state_code'] }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
